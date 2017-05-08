@@ -45,6 +45,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void) removeObjectsOfClass:(Class)class;
 
+/**
+ * Remove all objects in queue
+ */
+- (void) emptyQueue;
 
 #pragma mark - Queue getters
 

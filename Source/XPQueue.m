@@ -47,6 +47,10 @@
 	return dequeuedObject;
 }
 
+- (void) emptyQueue {
+	[self.queue removeAllObjects];
+}
+
 - (void) removeObjectsOfClass:(Class)class {
 	for (id object in self.queue.copy) {
 		if ([object isKindOfClass:class]) {
